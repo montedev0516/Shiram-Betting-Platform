@@ -20,9 +20,13 @@
   }
 }
 
+.country-select-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 .country-selector {
-  position: relative;
-  width: 200px; /* Adjust width as needed */
+  position: relative; 
 }
 
 .selector-header {
@@ -31,7 +35,7 @@
   cursor: pointer;
   padding: 10px;
   width: 80px;
-  background-color: #ffffff11;
+  background-color: #20202011;
 }
 
 .flag {
@@ -48,8 +52,7 @@
   border: 1px solid #ccc;
   background-color: #fff;
   z-index: 1000;
-  max-height: 200px; /* Set max height for scrolling */
-  overflow-y: auto;
+  width: 200px;
 }
 
 .country-option {
@@ -61,4 +64,8 @@
 
 .country-option:hover {
   background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.get-otp-btn:active {
+  background-color: #007bff;
 }
