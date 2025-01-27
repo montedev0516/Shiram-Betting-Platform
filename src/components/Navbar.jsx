@@ -12,6 +12,7 @@ import { display, padding, width } from '@mui/system';
 import TelInputSS from './TelInputSS';
 import Signin from './Signin';
 import ForgetPassword from './ForgetPassword';
+import Rules from './Rules';
 // Import LogoutButton
 
 const Navbar = () => {
@@ -56,18 +57,7 @@ const Navbar = () => {
         { path: "/post-job", title: "Post a Job" },
     ];
 
-    const style = {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: 1000,
-        bgcolor: 'background.paper',
-        border: '0px solid #000',
-        borderRadius: '10px',
-        boxShadow: 24,
-        overflow: 'hidden'
-    };
+
 
     return (
         <header
@@ -154,11 +144,9 @@ const Navbar = () => {
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
+                sx={{overflow: "auto"}}
             >
-                <div style={style}>
-                    <p className="text-sm text-gray-700 w-full bg-gray-200 p-4">Rules</p>
-                </div>
-
+                <Rules handleClose={handleClose} />
             </Modal>
 
             <Modal

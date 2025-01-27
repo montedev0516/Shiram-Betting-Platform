@@ -5,7 +5,7 @@ const WhiteInput = ({ id, type, value, onChange, placeholder, fontSize, classNam
 
   // Determine the border color based on focus
   const borderColor = isFocused ? '#f36c20' : '#ddd'; // Change to your desired color
-  const textColor = isFocused ? '#fff' : value ? (status == 'primary' ? '#000' : '#fff') : '#fff'; // Black text if not focused and has value, white otherwise
+  const textColor = isFocused ? '#fff' : value ? (status == 'secondary' ? '#fff' : '#000') : '#fff'; // Black text if not focused and has value, white otherwise
   const boxShadowCustom = isFocused ? '0px 1px #00000055': '';
 
   return (
